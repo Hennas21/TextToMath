@@ -1,7 +1,7 @@
 class TextToMath {
     calc(val) {
 
-        if (!this.containsOnlyLetters(val)) return "Oops! Not a string value."
+        if (!this.containsOnlyLetters(val)) return "Oops! Not a string value.";
         else {
             const input = val.toLowerCase();
             const inputArray = this.setInputInArray(input);
@@ -29,7 +29,7 @@ class TextToMath {
     }
 
     containsOnlyLetters(inputString) {
-        return /^[a-zA-Z]+$/.test(inputString);
+        return /^[a-zA-Z\s]+$/.test(inputString);
     }
 
     // getNum(num){
@@ -76,4 +76,4 @@ class TextToMath {
 }
 
 const T = new TextToMath()
-console.log(T.calc("asddas"))
+console.log(T.calc("one plus one plus two"))

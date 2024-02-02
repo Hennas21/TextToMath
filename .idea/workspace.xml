@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfee4b9f-8d02-4018-8951-e91587ae7c61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit-values.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unit-values.js" beforeDir="false" afterPath="$PROJECT_DIR$/unit-values.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +27,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2bmCA4TFUBQb1phvfSd1QBrWTtB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,7 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "javascript.nodejs.core.library.configured.version": "14.20.0",
+    "javascript.nodejs.core.library.configured.version": "14.21.3",
     "javascript.nodejs.core.library.typings.version": "14.18.63",
     "last_opened_file_path": "/Users/henrygrove/Development/TextToMath",
     "node.js.detected.package.eslint": "true",
@@ -61,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706810720479</updated>
       <workItem from="1706810721525" duration="9407000" />
+      <workItem from="1706885059298" duration="2185000" />
     </task>
     <servers />
   </component>
