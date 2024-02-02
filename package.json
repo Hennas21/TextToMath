@@ -18,10 +18,14 @@
     "math",
     "formula"
   ],
+  "type": "module",
   "author": "Henry Grove",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Hennas21/TextToMath/issues"
   },
-  "homepage": "https://github.com/Hennas21/TextToMath#readme"
+  "homepage": "https://github.com/Hennas21/TextToMath#readme",
+  "dependencies": {
+    "spelling-corrector": "^3.0.0"
+  }
 }

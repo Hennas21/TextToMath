@@ -1,15 +1,34 @@
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const  SpellCorrector = require('spelling-corrector');
+const spellCorrector = new SpellCorrector();
+import { unitMap } from './Place-values/unit-values.js';
 class TextToMath {
     calc(val) {
-
         if (!this.containsOnlyLetters(val)) return "Oops! Not a string value.";
         else {
-            const input = val.toLowerCase();
-            const inputArray = this.setInputInArray(input);
-
-            return inputArray
+            const inputArray = this.setInputInArray(val.toLowerCase());
+            this.testValues(inputArray);
+            //return inputArray
+            // return this.convert(inputArray);
         }
     }
+
+    testValues(inputArray) {
+        const tempArray = [];
+        for (let i = 0; i < inputArray.length; i++) {
+            let word = inputArray[i];
+            let value = unitMap.get(word);
+            console.log(value);
+        }
+    }
+    convert(inputArray){
+        const converted = [];
+        return converted;
+    }
+
     setInputInArray(input) {
+        spellCorrector.loadDictionary();
         const inputArray =[];
         let word =""
         for (let i = 0; i <= input.length; i++) {
@@ -18,18 +37,21 @@ class TextToMath {
                 inputArray.push(word);
                 word = "";
             }
-            if(input.charAt(i) !== " ") {
+            if(input.charAt(i) !== " " && input.charAt(i) !== "-") {
                 word += input.charAt(i);
             } else {
-                inputArray.push(word);
+                inputArray.push(spellCorrector.correct(word));
                 word = "";
             }
         }
         return inputArray
     }
 
+    checkIfOperator() {
+
+    }
     containsOnlyLetters(inputString) {
-        return /^[a-zA-Z\s]+$/.test(inputString);
+        return /^[a-zA-Z\s-]+$/.test(inputString);
     }
 
     // getNum(num){
@@ -76,4 +98,4 @@ class TextToMath {
 }
 
 const T = new TextToMath()
-console.log(T.calc("one plus one plus two"))
+console.log(T.calc("one plus one plus two minus sixty-one"))
