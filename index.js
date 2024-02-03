@@ -115,24 +115,34 @@ class TextToMath {
         let prevWord = "";
         let flagNextWord = false;
         for (let i = 0; i < input.length; i++) {
-            if (flagNextWord && input.charAt(i+1) === " " || input.charAt(i+1) === "") {
-                word += input.charAt(i);
+            let char = input.charAt(i)
+            if (flagNextWord === true && input.charAt(i+1) === " " || input.charAt(i+1) === "") {
+                word += char;
                 let fnWord = prevWord+"-"+word;
+                prevWord = prevWord+"-"+word;
                 inputArray.push(fnWord);
                 word = "";
                 flagNextWord = false;
-            } else if (input.charAt(i) === "-") {
+            } else if (char === "-") {
                 flagNextWord = true;
                 prevWord = word;
                 word = "";
             }
-            else if(input.charAt(i) === " ") {
-                prevWord = word;
-                inputArray.push(word);
-                word = "";
+            else if(char === " ") {
+                if (prevWord === "") {
+                    prevWord = word;
+                    inputArray.push(word);
+                    word = "";
+                } else {
+                    if (word !== "") {
+                        prevWord = word;
+                        inputArray.push(word);
+                        word = "";
+                    }
+                }
             }
             else {
-                word += input.charAt(i);
+                word += char;
             }
         }
         return inputArray
@@ -147,4 +157,10 @@ class TextToMath {
 }
 
 const T = new TextToMath()
-console.log(T.calc("one plus one plu two minus sixty-one"))
+//console.log(T.calc("fifty-one thousand four hundred and fifty-eight plus one plus one plus two minus sixty-one"));
+console.table(T.calc("seven hundred eighty-four thousand five hundred ninety-eight"));
+console.table(T.calc("forty-eight thousand three hundred fifty-eight"));
+console.table(T.calc("nine hundred eighty-six thousand five hundred thirty-two"));
+console.table(T.calc("five hundred ninety-six thousand one hundred"));
+console.table(T.calc("one hundred sixty-five"));
+console.table(T.calc("one thousand twenty-three"));
