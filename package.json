@@ -4,7 +4,9 @@
   "description": "Converts text that represents a math formula to an actual formula E.g. \"One plus one\" -> 1 + 1 = 2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "fix" : "npx eslint index.js"
   },
   "repository": {
     "type": "git",
@@ -27,5 +29,8 @@
   "homepage": "https://github.com/Hennas21/TextToMath#readme",
   "dependencies": {
     "spelling-corrector": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
   }
 }

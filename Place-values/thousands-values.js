@@ -1,4 +1,4 @@
-const thousandsMap = new Map([
+export const thousandsMap = new Map([
     ['ten', 1000],
     ['twenty', 2000],
     ['thirty', 3000],

@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfee4b9f-8d02-4018-8951-e91587ae7c61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Place-values/hundreds-values.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Place-values/tens-values.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Place-values/thousands-values.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Place-values/hundreds-values.js" beforeDir="false" afterPath="$PROJECT_DIR$/Place-values/hundreds-values.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Place-values/tens-values.js" beforeDir="false" afterPath="$PROJECT_DIR$/Place-values/tens-values.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Place-values/thousands-values.js" beforeDir="false" afterPath="$PROJECT_DIR$/Place-values/thousands-values.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit-values.js" beforeDir="false" afterPath="$PROJECT_DIR$/Place-values/unit-values.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,28 +39,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.script.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;14.21.3&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;14.18.63&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/henrygrove/Development/TextToMath&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.index.js.executor": "Run",
+    "Node.js.script.js.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "14.21.3",
+    "javascript.nodejs.core.library.typings.version": "14.18.63",
+    "last_opened_file_path": "/Users/henrygrove/Development/TextToMath",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.fix.executor": "Run",
+    "npm.start.executor": "Run",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\henry_2\Documents\Development\TextToMath\Place values" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="fix" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.fix" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,6 +104,8 @@
       <workItem from="1706810721525" duration="9407000" />
       <workItem from="1706885059298" duration="2185000" />
       <workItem from="1706898657376" duration="5070000" />
+      <workItem from="1706950135912" duration="7131000" />
+      <workItem from="1706957738815" duration="757000" />
     </task>
     <servers />
   </component>

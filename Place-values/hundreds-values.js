@@ -1,4 +1,4 @@
-const hundredsMap = new Map([
+export const hundredsMap = new Map([
     ['ten', 100],
     ['twenty', 200],
     ['thirty', 300],

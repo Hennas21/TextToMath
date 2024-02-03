@@ -1,4 +1,4 @@
-const tensMap = new Map([
+export const tensMap = new Map([
     ['ten', 10],
     ['twenty', 20],
     ['thirty', 30],
